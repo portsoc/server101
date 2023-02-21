@@ -19,7 +19,7 @@
   "homepage": "https://github.com/portsoc/server101#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
