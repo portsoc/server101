@@ -9,7 +9,12 @@ const WEB_ROOT = 'webpages';
 // load and send the requested file
 async function responder(req, res) {
   const fileContents = await readFile(req, WEB_ROOT);
-  res.write(fileContents);
+  if (fileContents) {
+    res.write(fileContents);
+  } else {
+    res.statusCode = 404;
+    res.write('not found');
+  }
   res.end();
 }
 
