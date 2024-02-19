@@ -8,15 +8,23 @@
     "s1": "node src/server-1-hello-world.mjs",
     "s2": "node src/server-2-files.mjs",
     "s3": "node src/server-3-dynamic.mjs",
-    "s4": "node src/server-4-express-dynamic.mjs",
-    "s5": "node src/server-5-express-with-static.mjs",
+    "s4": "node src/server-4-express-static.mjs",
+    "s5": "node src/server-5-express-dynamic.mjs",
     "s6": "node src/server-6-express-minimal.mjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/portsoc/server101.git"
   },
-  "keywords": ["http", "express", "server", "basic", "example", "static", "dynamic"],
+  "keywords": [
+    "http",
+    "express",
+    "server",
+    "basic",
+    "example",
+    "static",
+    "dynamic"
+  ],
   "author": "Rich Boakes <rich@boakes.org>",
   "contributors": [
     "Jacek Kopecky <jacek@jacek.cz>",
