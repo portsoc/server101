@@ -1,5 +1,5 @@
 import * as http from 'http';
-import { readFile } from './files.mjs';
+import { readFile } from './files.js';
 
 
 // where web pages are stored
@@ -17,7 +17,7 @@ async function requestHandler(req, res) {
 }
 
 // all responses go through this function
-function send(res, msg='', code=200) {
+function send(res, msg = '', code = 200) {
   res.statusCode = code;
   res.end(msg);
 }

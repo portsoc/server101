@@ -1,6 +1,6 @@
 import * as http from 'http';
-import { readFile } from './files.mjs';
-import { nextMessage } from './messages.mjs';
+import { readFile } from './files.js';
+import { nextMessage } from './messages.js';
 
 // where web pages are stored
 const WEB_ROOT = 'webpages';
@@ -17,7 +17,7 @@ async function sendFile(req, res) {
 }
 
 // all responses go through this function
-function send(res, msg='', code=200) {
+function send(res, msg = '', code = 200) {
   res.statusCode = code;
   res.end(msg);
 }

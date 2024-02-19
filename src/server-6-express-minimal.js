@@ -1,5 +1,5 @@
 import express from 'express';
-import { nextMessage } from './messages.mjs';
+import { nextMessage } from './messages.js';
 
 function sendMessage(req, res) {
   const message = nextMessage();

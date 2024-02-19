@@ -2,7 +2,7 @@
 import express from 'express';
 
 // use our dynamic message generator seen in `server-3-dynaimc.mjs`
-import { nextMessage } from './messages.mjs';
+import { nextMessage } from './messages.js';
 
 // handle message sending
 function sendMessage(req, res) {

@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "description": "Example HTTP servers in Node.js using the HTTP and Express modules.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "s0": "node src/server-0-hello-world.mjs",
-    "s1": "node src/server-1-hello-world.mjs",
-    "s2": "node src/server-2-files.mjs",
-    "s3": "node src/server-3-dynamic.mjs",
-    "s4": "node src/server-4-express-static.mjs",
-    "s5": "node src/server-5-express-dynamic.mjs",
-    "s6": "node src/server-6-express-minimal.mjs"
+    "s0": "node src/server-0-hello-world.js",
+    "s1": "node src/server-1-hello-world.js",
+    "s2": "node src/server-2-files.js",
+    "s3": "node src/server-3-dynamic.js",
+    "s4": "node src/server-4-express-static.js",
+    "s5": "node src/server-5-express-dynamic.js",
+    "s6": "node src/server-6-express-minimal.js"
   },
   "repository": {
     "type": "git",
