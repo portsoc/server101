@@ -1,25 +1,29 @@
-// use the HTTP library https://nodejs.org/api/http.html
 import * as http from 'http';
-
 import { readFile } from './files.mjs';
+
 
 // where web pages are stored
 const WEB_ROOT = 'webpages';
 
-// load and send the requested file
-async function responder(req, res) {
+// send files in response to requests that match filenames
+// for other requests, send 404 not found
+async function requestHandler(req, res) {
   const fileContents = await readFile(req, WEB_ROOT);
   if (fileContents) {
-    res.write(fileContents);
+    send(res, fileContents);
   } else {
-    res.statusCode = 404;
-    res.write('not found');
+    send(res, 'not found', 404);
   }
-  res.end();
 }
 
-// create a server that uses our responder
-const server = http.createServer(responder);
+// all responses go through this function
+function send(res, msg='', code=200) {
+  res.statusCode = code;
+  res.end(msg);
+}
+
+// create a server that uses our requestHandler
+const server = http.createServer(requestHandler);
 
 // make the server available on the network
 server.listen(8080);

@@ -1,5 +1,5 @@
 import * as http from 'http';
-//                     ^^^^  https://nodejs.org/api/http.html
+//                     ^^^^ https://nodejs.org/api/http.html
 
 
 
@@ -10,17 +10,17 @@ import * as http from 'http';
 function requestHandler(req, res) {
 
   if (req.url === '/hello-world.txt') {
-    send(res, 'Hello World!');
+    res.write('Hello World!');
   } else {
-    send(res, 'not found', 404);
+    res.statusCode = 404;
+    res.write('not found');
   }
+  res.end();
 }
 
-// all responses go through this function
-function send(res, msg='', code=200) {
-  res.statusCode = code;
-  res.end(msg);
-}
+
+
+
 
 // create a server that uses our requestHandler
 const server = http.createServer(requestHandler);

@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "s0": "node src/server-0-hello-world.mjs",
+    "s1": "node src/server-1-hello-world.mjs",
+    "s2": "node src/server-2-files.mjs",
+    "s3": "node src/server-3-dynamic.mjs",
+    "s4": "node src/server-4-express-dynamic.mjs",
+    "s5": "node src/server-5-express-with-static.mjs",
+    "s6": "node src/server-6-express-minimal.mjs"
   },
   "repository": {
     "type": "git",
