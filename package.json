@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "s00": "node src/server-0-hello-browser.js",
     "s0": "node src/server-0-hello-world.js",
     "s1": "node src/server-1-hello-world.js",
     "s2": "node src/server-2-files.js",
@@ -37,6 +38,6 @@
   },
   "homepage": "https://github.com/portsoc/server101#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^5.0.0-beta.1"
   }
 }
