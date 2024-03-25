@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/portsoc/server101#readme",
   "dependencies": {
-    "express": "^5.0.0-beta.1"
+    "express": "^5.0.0-beta.3"
   }
 }
