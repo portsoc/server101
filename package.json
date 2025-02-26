@@ -5,14 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "s00": "node src/server-0-hello-browser.js",
-    "s0": "node src/server-0-hello-world.js",
+    "s0": "node src/server-0-http-dump.js",
     "s1": "node src/server-1-hello-world.js",
-    "s2": "node src/server-2-files.js",
-    "s3": "node src/server-3-dynamic.js",
-    "s4": "node src/server-4-express-static.js",
-    "s5": "node src/server-5-express-dynamic.js",
-    "s6": "node src/server-6-express-minimal.js"
+    "s2": "node src/server-2-hello-world.js",
+    "s3": "node src/server-3-files.js",
+    "s4": "node src/server-4-dynamic.js",
+    "s5": "node src/server-5-express-static.js",
+    "s6": "node src/server-6-express-dynamic.js",
+    "s7": "node src/server-7-express-minimal.js"
   },
   "repository": {
     "type": "git",
